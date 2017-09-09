@@ -1,3 +1,8 @@
+
+* {
+  box-sizing: border-box;  
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -20,6 +25,14 @@ body {
   text-align: center;
 }
 
+ul {
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
 .quote {
   font-family: 'Julius Sans One', sans-serif;
   font-size: 2.5rem;
@@ -29,4 +42,81 @@ body {
   font-family: 'Crimson Text', serif;
   font-size: 1.5rem;
   font-style: italic;
+}
+
+@media screen (min-width: 1224px) {
+  
+  .quote {
+    font-size: 3rem;
+  }
+  
+  .autor {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  
+  .quote {
+    font-size: 2.1rem;
+  }
+  .autor {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 860px) {
+  
+  .quote {
+    font-size: 1.7rem;
+  }
+  .autor {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  
+  .quote {
+    font-size: 1.3rem;
+  }
+  .autor {
+    font-size: .9rem;
+  }
+}
+
+@media (max-width: 460px) {
+  
+  .quote {
+    font-size: 1rem;
+  }
+  .autor {
+    font-size: .7rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+@media (max-width: 1224px) {
+  .languages {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 860px) {
+  .languages {
+    font-size: .95rem;
+  }
+}
+@media (max-width: 640px) {
+  .languages {
+    font-size: .9rem;
+  }
+}
+@media (max-width: 460px) {
+  .languages {
+    font-size: .8rem;
+  }
 }
